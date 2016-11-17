@@ -2,3 +2,4 @@
 hoge
 hoge
 “test hoge”
+3
