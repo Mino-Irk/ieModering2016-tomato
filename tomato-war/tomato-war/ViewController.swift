@@ -21,6 +21,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        if (indexPath.row % 2 == 0) {
+            cell.contentView.backgroundColor = #colorLiteral(red: 1, green: 0.8413158059, blue: 0.8469641805, alpha: 1)
+        } else {
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.8873918653, green: 0.8387421966, blue: 0.8471953869, alpha: 1)
+        }
+    }
+    
+    
+    
     // Tableに表示する行数を指定する関数. 配列に入っている文字列の数をカウント
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoItem.count
@@ -28,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // todoItemの値を各テーブルに表示
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellValue = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cellValue = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell2")
         cellValue .textLabel?.text = todoItem[indexPath.row]
         return cellValue
     }
