@@ -73,14 +73,23 @@ class Calendars: UIViewController, UICollectionViewDataSource, UICollectionViewD
         //コレクションビューから識別子「CalendarCell」のセルを取得する
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
         if(indexPath.section == 0){             //曜日表示
-            cell.backgroundColor = UIColor.green
+            cell.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
             cell.textLabel.text = weekArray[indexPath.row]
             
         }else{                                  //日付表示
-            cell.backgroundColor = UIColor.white
+            cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.textLabel.text = dateManager.conversionDateFormat(index: indexPath.row) //Index番号から表示する日を求める
             
         }
+        
+        if (indexPath.row % 7 == 0) {
+            cell.textLabel.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        } else if (indexPath.row % 7 == 6) {
+            cell.textLabel.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        } else {
+            cell.textLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        }
+        
         return cell
     }
 

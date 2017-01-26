@@ -14,24 +14,11 @@ class TimeTable: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
     @IBOutlet weak var timeTableView: UICollectionView!
     
-    //    func numberOfSections(in collectionView: UICollectionView) -> Int {
-    //        return 1
-    //    }
-    
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return 30
     }
-    
-    //    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-    //         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ell", for: indexPath) as UICollectionViewCell
-    //        　_ = collectionView.cellForItem(at: indexPath as IndexPath)!
-    //        //セグエを実行する。
-    //        _ = collectionView.cellForItem(at: indexPath) as! TestCollectionViewCell
-    //        _ = indexPath.row % 30
-    //        performSegue(withIdentifier: "toSubViewController", sender: nil)
-    //    }
     
     //データを返すメソッド
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
@@ -45,10 +32,9 @@ class TimeTable: UIViewController, UICollectionViewDataSource, UICollectionViewD
     }
     
     /*
-     
      セルのレイアウト設定
-     
      */
+    
     //セルサイズの指定（UICollectionViewDelegateFlowLayoutで必須）　横幅いっぱいにセルが広がるようにしたい
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfMargin:CGFloat = 8.0
@@ -57,7 +43,6 @@ class TimeTable: UIViewController, UICollectionViewDataSource, UICollectionViewD
         
         return CGSize(width:widths,height:heights)
     }
-    
     
     //セルの水平方向のマージンを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
