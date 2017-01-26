@@ -87,7 +87,7 @@ class Calendars: UIViewController, UICollectionViewDataSource, UICollectionViewD
         } else if (indexPath.row % 7 == 6) {
             cell.textLabel.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         } else {
-            cell.textLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            cell.textLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         }
         
         return cell
