@@ -29,9 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.contentView.backgroundColor = #colorLiteral(red: 0.8873918653, green: 0.8387421966, blue: 0.8471953869, alpha: 0.3017176798)
         }
     }
-    
-    
-    
+
     // Tableに表示する行数を指定する関数. 配列に入っている文字列の数をカウント
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoItem.count

@@ -15,6 +15,8 @@
 		728D28011DFD4704009C6A0E /* tomato_warTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D28001DFD4704009C6A0E /* tomato_warTests.swift */; };
 		728D280C1DFD4704009C6A0E /* tomato_warUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D280B1DFD4704009C6A0E /* tomato_warUITests.swift */; };
 		728D281A1DFD4AED009C6A0E /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D28191DFD4AED009C6A0E /* AddToDo.swift */; };
+		72BDC5701E39AE4700292CBF /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC56F1E39AE4700292CBF /* TimeTable.swift */; };
+		72BDC5721E39B0D000292CBF /* TimeTableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */; };
 		7E36609D1E271F2600390F4F /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609C1E271F2600390F4F /* CalendarCell.swift */; };
 		7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609E1E271F4F00390F4F /* DateManager.swift */; };
 		7E3660A11E27205900390F4F /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3660A01E27205900390F4F /* Calendars.swift */; };
@@ -52,6 +54,8 @@
 		728D280B1DFD4704009C6A0E /* tomato_warUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomato_warUITests.swift; sourceTree = "<group>"; };
 		728D280D1DFD4704009C6A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728D28191DFD4AED009C6A0E /* AddToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
+		72BDC56F1E39AE4700292CBF /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableCollectionView.swift; sourceTree = "<group>"; };
 		7E36609C1E271F2600390F4F /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7E36609E1E271F4F00390F4F /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		7E3660A01E27205900390F4F /* Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendars.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				7E3660A01E27205900390F4F /* Calendars.swift */,
 				7E36609C1E271F2600390F4F /* CalendarCell.swift */,
 				728D27EF1DFD4704009C6A0E /* Main.storyboard */,
+				72BDC56F1E39AE4700292CBF /* TimeTable.swift */,
+				72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */,
 				728D28191DFD4AED009C6A0E /* AddToDo.swift */,
 				7E36609E1E271F4F00390F4F /* DateManager.swift */,
 				728D27F21DFD4704009C6A0E /* Assets.xcassets */,
@@ -274,9 +280,11 @@
 			files = (
 				728D27EE1DFD4704009C6A0E /* ViewController.swift in Sources */,
 				7E3660A11E27205900390F4F /* Calendars.swift in Sources */,
+				72BDC5701E39AE4700292CBF /* TimeTable.swift in Sources */,
 				7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */,
 				728D281A1DFD4AED009C6A0E /* AddToDo.swift in Sources */,
 				728D27EC1DFD4704009C6A0E /* AppDelegate.swift in Sources */,
+				72BDC5721E39B0D000292CBF /* TimeTableCollectionView.swift in Sources */,
 				7E36609D1E271F2600390F4F /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6TM2893D52;
 				INFOPLIST_FILE = "tomato-war/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nemunemu.tomato-war";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6TM2893D52;
 				INFOPLIST_FILE = "tomato-war/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nemunemu.tomato-war";
 				PRODUCT_NAME = "$(TARGET_NAME)";
