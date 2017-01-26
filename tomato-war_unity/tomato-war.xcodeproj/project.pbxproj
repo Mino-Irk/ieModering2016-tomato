@@ -20,6 +20,7 @@
 		7E36609D1E271F2600390F4F /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609C1E271F2600390F4F /* CalendarCell.swift */; };
 		7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609E1E271F4F00390F4F /* DateManager.swift */; };
 		7E3660A11E27205900390F4F /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3660A01E27205900390F4F /* Calendars.swift */; };
+		7ECC727A1E39D62B0088017C /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC72791E39D62B0088017C /* time.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7E36609C1E271F2600390F4F /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7E36609E1E271F4F00390F4F /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		7E3660A01E27205900390F4F /* Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendars.swift; sourceTree = "<group>"; };
+		7ECC72791E39D62B0088017C /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = time.png; path = ../../../../../../../../Desktop/time.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				7E3660A01E27205900390F4F /* Calendars.swift */,
 				7E36609C1E271F2600390F4F /* CalendarCell.swift */,
 				728D27EF1DFD4704009C6A0E /* Main.storyboard */,
+				7ECC72791E39D62B0088017C /* time.png */,
 				72BDC56F1E39AE4700292CBF /* TimeTable.swift */,
 				72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */,
 				728D28191DFD4AED009C6A0E /* AddToDo.swift */,
@@ -253,6 +256,7 @@
 			files = (
 				728D27F61DFD4704009C6A0E /* LaunchScreen.storyboard in Resources */,
 				728D27F31DFD4704009C6A0E /* Assets.xcassets in Resources */,
+				7ECC727A1E39D62B0088017C /* time.png in Resources */,
 				728D27F11DFD4704009C6A0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

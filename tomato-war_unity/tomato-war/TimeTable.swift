@@ -39,7 +39,7 @@ class TimeTable: UIViewController, UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfMargin:CGFloat = 8.0
         let widths:CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin)/CGFloat(5)
-        let heights:CGFloat = widths * 0.8
+        let heights:CGFloat = widths * 1.0
         
         return CGSize(width:widths,height:heights)
     }
