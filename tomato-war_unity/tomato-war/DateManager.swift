@@ -65,7 +65,7 @@ class DateManager: NSObject {
     //今セレクトされているselectDayの年月をテキストで出力
     func CalendarHeader()->String{
         let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY年MM月"
+        formatter.dateFormat = "YYYY/MM"
         
         return formatter.string(from: selectDay)
     }

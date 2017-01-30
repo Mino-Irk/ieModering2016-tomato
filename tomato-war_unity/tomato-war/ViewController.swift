@@ -12,6 +12,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var todolistTable: UITableView!
 
+    @IBAction func prevlist(_ sender: UIStoryboardSegue) {
+    }
+    
+    @IBAction func backlist(_ sender: UIStoryboardSegue) {
+    }
+    
+    
     // 起動時に呼ばれる関数
     override func viewDidLoad() {
         super.viewDidLoad()
