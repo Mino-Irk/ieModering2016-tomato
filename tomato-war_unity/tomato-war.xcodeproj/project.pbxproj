@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		728D27EC1DFD4704009C6A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D27EB1DFD4704009C6A0E /* AppDelegate.swift */; };
-		728D27EE1DFD4704009C6A0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D27ED1DFD4704009C6A0E /* ViewController.swift */; };
 		728D27F11DFD4704009C6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728D27EF1DFD4704009C6A0E /* Main.storyboard */; };
 		728D27F31DFD4704009C6A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728D27F21DFD4704009C6A0E /* Assets.xcassets */; };
 		728D27F61DFD4704009C6A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728D27F41DFD4704009C6A0E /* LaunchScreen.storyboard */; };
@@ -29,6 +28,9 @@
 		7ECC72801E39F32A0088017C /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC727F1E39F32A0088017C /* check.png */; };
 		7ECC72821E3A06290088017C /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC72811E3A06290088017C /* white.jpg */; };
 		7ECC72841E3A1D920088017C /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC72831E3A1D920088017C /* flower.png */; };
+		7EE300C11E40BD8F00EFCF40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE300C01E40BD8F00EFCF40 /* ViewController.swift */; };
+		7EE300C31E40BE1B00EFCF40 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE300C21E40BE1B00EFCF40 /* ViewControllers.swift */; };
+		7EE300C71E40CA2E00EFCF40 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE300C61E40CA2E00EFCF40 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,6 @@
 /* Begin PBXFileReference section */
 		728D27E81DFD4704009C6A0E /* tomato-war.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tomato-war.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728D27EB1DFD4704009C6A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		728D27ED1DFD4704009C6A0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		728D27F01DFD4704009C6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		728D27F21DFD4704009C6A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728D27F51DFD4704009C6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +78,9 @@
 		7ECC727F1E39F32A0088017C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../illustration/check.png; sourceTree = "<group>"; };
 		7ECC72811E3A06290088017C /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white.jpg; path = ../../illustration/white.jpg; sourceTree = "<group>"; };
 		7ECC72831E3A1D920088017C /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower.png; path = ../../illustration/flower.png; sourceTree = "<group>"; };
+		7EE300C01E40BD8F00EFCF40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		7EE300C21E40BE1B00EFCF40 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		7EE300C61E40CA2E00EFCF40 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = ../Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +131,16 @@
 		728D27EA1DFD4704009C6A0E /* tomato-war */ = {
 			isa = PBXGroup;
 			children = (
+				7EE300C61E40CA2E00EFCF40 /* Menu.swift */,
+				7EE300C01E40BD8F00EFCF40 /* ViewController.swift */,
 				728D27EB1DFD4704009C6A0E /* AppDelegate.swift */,
-				728D27ED1DFD4704009C6A0E /* ViewController.swift */,
 				7E3660A01E27205900390F4F /* Calendars.swift */,
 				7E36609C1E271F2600390F4F /* CalendarCell.swift */,
+				7EE300C21E40BE1B00EFCF40 /* ViewControllers.swift */,
+				728D28191DFD4AED009C6A0E /* AddToDo.swift */,
+				72BDC56F1E39AE4700292CBF /* TimeTable.swift */,
+				72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */,
+				7E36609E1E271F4F00390F4F /* DateManager.swift */,
 				728D27EF1DFD4704009C6A0E /* Main.storyboard */,
 				7ECC727B1E39EF3F0088017C /* calendar.png */,
 				7ECC72831E3A1D920088017C /* flower.png */,
@@ -141,10 +151,6 @@
 				7E02B4171E3AFED30024B26B /* tomato.jpg */,
 				7ECC72811E3A06290088017C /* white.jpg */,
 				7ECC727F1E39F32A0088017C /* check.png */,
-				72BDC56F1E39AE4700292CBF /* TimeTable.swift */,
-				72BDC5711E39B0D000292CBF /* TimeTableCollectionView.swift */,
-				728D28191DFD4AED009C6A0E /* AddToDo.swift */,
-				7E36609E1E271F4F00390F4F /* DateManager.swift */,
 				728D27F21DFD4704009C6A0E /* Assets.xcassets */,
 				728D27F41DFD4704009C6A0E /* LaunchScreen.storyboard */,
 				728D27F71DFD4704009C6A0E /* Info.plist */,
@@ -314,9 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				728D27EE1DFD4704009C6A0E /* ViewController.swift in Sources */,
 				7E3660A11E27205900390F4F /* Calendars.swift in Sources */,
+				7EE300C31E40BE1B00EFCF40 /* ViewControllers.swift in Sources */,
 				72BDC5701E39AE4700292CBF /* TimeTable.swift in Sources */,
+				7EE300C11E40BD8F00EFCF40 /* ViewController.swift in Sources */,
+				7EE300C71E40CA2E00EFCF40 /* Menu.swift in Sources */,
 				7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */,
 				728D281A1DFD4AED009C6A0E /* AddToDo.swift in Sources */,
 				728D27EC1DFD4704009C6A0E /* AppDelegate.swift in Sources */,

@@ -8,16 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewControllers: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var todolistTable: UITableView!
 
-    @IBAction func prevlist(_ sender: UIStoryboardSegue) {
+    @IBAction func prevtodo(_ sender: UIStoryboardSegue) {
     }
-    
-    @IBAction func backlist(_ sender: UIStoryboardSegue) {
-    }
-    
+
+        
     
     // 起動時に呼ばれる関数
     override func viewDidLoad() {
