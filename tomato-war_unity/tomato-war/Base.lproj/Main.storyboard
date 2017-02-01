@@ -21,12 +21,18 @@
                     <view key="view" contentMode="scaleToFill" id="xjN-zE-mrr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title-tomato.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-u5-FZz">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTc-XY-dRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1636" y="725"/>
+            <point key="canvasLocation" x="-1636.71875" y="724.8046875"/>
         </scene>
         <!--View Controllers-->
         <scene sceneID="tne-QT-ifu">
@@ -107,17 +113,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-XF-7FF">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-XF-7FF">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1032"/>
                                 <connections>
                                     <segue destination="4P1-BT-KmM" kind="embed" id="6TG-3z-H6U"/>
                                 </connections>
                             </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hQs-an-eQ6">
-                                <rect key="frame" x="20" y="944" width="524" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hQs-an-eQ6">
+                                <rect key="frame" x="0.0" y="921" width="768" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djk-hk-PYm">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
                                         <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
                                         <state key="normal" title="育成"/>
                                         <connections>
@@ -125,21 +131,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fv-Qe-hIf">
-                                        <rect key="frame" x="131" y="0.0" width="131" height="60"/>
+                                        <rect key="frame" x="192" y="0.0" width="192" height="50"/>
                                         <state key="normal" title="ToDo"/>
                                         <connections>
                                             <action selector="ToTodo:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="oSa-df-WTp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sty-FM-E4Q">
-                                        <rect key="frame" x="262" y="0.0" width="131" height="60"/>
+                                        <rect key="frame" x="384" y="0.0" width="192" height="50"/>
                                         <state key="normal" title="Calendar"/>
                                         <connections>
                                             <action selector="ToCalendar:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="Mxm-NR-PrH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yso-0X-XJg">
-                                        <rect key="frame" x="393" y="0.0" width="131" height="60"/>
+                                        <rect key="frame" x="576" y="0.0" width="192" height="50"/>
                                         <state key="normal" title="TimeTable"/>
                                         <connections>
                                             <action selector="ToTimetable:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="bpq-MB-fQB"/>
@@ -147,18 +153,19 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="pPK-1u-owM"/>
+                                    <constraint firstAttribute="height" constant="50" id="1VP-P1-nEb"/>
+                                    <constraint firstAttribute="width" constant="768" id="XVz-nv-nYN"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hQs-an-eQ6" secondAttribute="trailing" id="2hM-dK-FCG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hQs-an-eQ6" secondAttribute="trailing" constant="-20" id="2hM-dK-FCG"/>
                             <constraint firstAttribute="trailing" secondItem="pMI-XF-7FF" secondAttribute="trailing" id="69G-MO-sOu"/>
                             <constraint firstItem="pMI-XF-7FF" firstAttribute="bottom" secondItem="7cT-b5-Nog" secondAttribute="top" id="6F8-bo-Mjb"/>
                             <constraint firstItem="pMI-XF-7FF" firstAttribute="top" secondItem="WG2-Bd-FSC" secondAttribute="top" id="JTu-MD-JKH"/>
                             <constraint firstItem="pMI-XF-7FF" firstAttribute="leading" secondItem="WG2-Bd-FSC" secondAttribute="leading" id="Kgl-F4-9As"/>
-                            <constraint firstItem="7cT-b5-Nog" firstAttribute="top" secondItem="hQs-an-eQ6" secondAttribute="bottom" id="r6B-3e-Tj5"/>
+                            <constraint firstItem="7cT-b5-Nog" firstAttribute="top" secondItem="hQs-an-eQ6" secondAttribute="bottom" constant="53" id="nsR-3i-sL6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -393,6 +400,7 @@
         <image name="check.png" width="1024" height="1024"/>
         <image name="flower.png" width="480" height="600"/>
         <image name="time.png" width="1536" height="2048"/>
+        <image name="title-tomato.jpg" width="1536" height="2048"/>
         <image name="tomato2.png" width="675" height="900"/>
         <image name="white.jpg" width="1018" height="1018"/>
     </resources>

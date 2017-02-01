@@ -45,7 +45,7 @@ class Menu: UIViewController{
         //pageViewController!.dataSource = self
         
         // 最初に表示する画面として配列の先頭の ViewController を設定する
-        pageViewController!.setViewControllers([vrArray[0]], direction: .forward, animated: false, completion: nil)
+        pageViewController!.setViewControllers([vtArray[0]], direction: .forward, animated: false, completion: nil)
         
     }
     
