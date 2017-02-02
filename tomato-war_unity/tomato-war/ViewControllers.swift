@@ -8,6 +8,8 @@
 
 import UIKit
 
+var point = 0 // 育成ポイント
+
 class ViewControllers: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var todolistTable: UITableView!
@@ -53,6 +55,9 @@ class ViewControllers: UIViewController, UITableViewDataSource, UITableViewDeleg
             todoItem.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             UserDefaults.init().set(todoItem, forKey: "todoList")
+            // とりあえず1タスクにつき10ポイント振っている
+            point += 10
+//            print(point)
         }
     }
     
