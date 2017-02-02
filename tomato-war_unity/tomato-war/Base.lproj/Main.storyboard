@@ -349,6 +349,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tomato3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cA9-h8-sAi">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mi-lW-B4R">
                                 <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -356,7 +360,7 @@
                                     <navigationItem title="To Do Title" id="9EK-P8-xZW">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="A18-pq-9lK">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="pQL-74-bIx"/>
+                                                <segue destination="UHd-jS-LaV" kind="unwind" unwindAction="prevtodo:" id="0Bk-dY-Stf"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -377,6 +381,10 @@
                                     <segue destination="UHd-jS-LaV" kind="unwind" unwindAction="prevtodo:" id="vF7-Ac-FTj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rabbit.png" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-vd-y4z">
+                                <rect key="frame" x="-65" y="463" width="1245" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -387,13 +395,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8N-sj-xni" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="UHd-jS-LaV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="695" y="-86"/>
+            <point key="canvasLocation" x="694.53125" y="-86.1328125"/>
         </scene>
     </scenes>
     <resources>
         <image name="border.png" width="1200" height="851"/>
         <image name="calendar.png" width="480" height="600"/>
         <image name="check.png" width="1024" height="1024"/>
+        <image name="rabbit.png" width="2048" height="1000"/>
         <image name="time.png" width="1536" height="2048"/>
         <image name="title-tomato.jpg" width="1536" height="2048"/>
         <image name="tomato2.png" width="675" height="900"/>
