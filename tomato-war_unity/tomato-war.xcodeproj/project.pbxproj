@@ -23,6 +23,7 @@
 		7E36609D1E271F2600390F4F /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609C1E271F2600390F4F /* CalendarCell.swift */; };
 		7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609E1E271F4F00390F4F /* DateManager.swift */; };
 		7E3660A11E27205900390F4F /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3660A01E27205900390F4F /* Calendars.swift */; };
+		7E3EA58F1E42CB3700070B6B /* tomato3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA58E1E42CB3700070B6B /* tomato3.png */; };
 		7E9A5D3B1E3F16E10099047A /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9A5D3A1E3F16E10099047A /* time.png */; };
 		7ECC727C1E39EF3F0088017C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC727B1E39EF3F0088017C /* calendar.png */; };
 		7ECC727E1E39F3230088017C /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC727D1E39F3230088017C /* border.png */; };
@@ -74,6 +75,7 @@
 		7E36609C1E271F2600390F4F /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7E36609E1E271F4F00390F4F /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		7E3660A01E27205900390F4F /* Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendars.swift; sourceTree = "<group>"; };
+		7E3EA58E1E42CB3700070B6B /* tomato3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tomato3.png; path = ../../illustration/tomato3.png; sourceTree = "<group>"; };
 		7E9A5D3A1E3F16E10099047A /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = time.png; path = ../../illustration/time.png; sourceTree = "<group>"; };
 		7ECC727B1E39EF3F0088017C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = ../../illustration/calendar.png; sourceTree = "<group>"; };
 		7ECC727D1E39F3230088017C /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = ../../illustration/border.png; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				7ECC727B1E39EF3F0088017C /* calendar.png */,
 				31301D9D1E418A9300114A9B /* title-tomato.jpg */,
 				7ECC72831E3A1D920088017C /* flower.png */,
+				7E3EA58E1E42CB3700070B6B /* tomato3.png */,
 				7E9A5D3A1E3F16E10099047A /* time.png */,
 				7E02B4191E3B179F0024B26B /* tomato2.png */,
 				7ECC727D1E39F3230088017C /* border.png */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728D27F61DFD4704009C6A0E /* LaunchScreen.storyboard in Resources */,
+				7E3EA58F1E42CB3700070B6B /* tomato3.png in Resources */,
 				7ECC72821E3A06290088017C /* white.jpg in Resources */,
 				7ECC727E1E39F3230088017C /* border.png in Resources */,
 				7ECC72841E3A1D920088017C /* flower.png in Resources */,

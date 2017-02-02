@@ -61,12 +61,12 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-pv-0ss">
-                                <rect key="frame" x="0.0" y="64" width="768" height="931"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <imageView key="tableFooterView" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomato2.png" id="2qe-UG-yIL">
-                                    <rect key="frame" x="0.0" y="72" width="768" height="928"/>
+                                <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomato3.png" id="2qe-UG-yIL">
+                                    <rect key="frame" x="0.0" y="72" width="768" height="903"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <prototypes>
@@ -86,10 +86,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Bmr-a6-VkC"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUn-zN-Ed5">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -99,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="695" y="725"/>
+            <point key="canvasLocation" x="694.53125" y="724.8046875"/>
         </scene>
         <!--Menu-->
         <scene sceneID="rmf-qd-Dew">
@@ -125,7 +121,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djk-hk-PYm">
                                         <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
                                         <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
-                                        <state key="normal" title="育成"/>
+                                        <state key="normal" title="Home"/>
                                         <connections>
                                             <action selector="ToCultivation:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="d8f-6z-ivg"/>
                                         </connections>
@@ -398,10 +394,10 @@
         <image name="border.png" width="1200" height="851"/>
         <image name="calendar.png" width="480" height="600"/>
         <image name="check.png" width="1024" height="1024"/>
-        <image name="flower.png" width="480" height="600"/>
         <image name="time.png" width="1536" height="2048"/>
         <image name="title-tomato.jpg" width="1536" height="2048"/>
         <image name="tomato2.png" width="675" height="900"/>
+        <image name="tomato3.png" width="675" height="900"/>
         <image name="white.jpg" width="1018" height="1018"/>
     </resources>
 </document>
