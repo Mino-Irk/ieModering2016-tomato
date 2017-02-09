@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="spG-JV-rSf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="spG-JV-rSf">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="M4g-Pv-aVm">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="Sc0-zY-KZy" customClass="ViewController" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,14 +29,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="upf-8G-RB9"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="upf-8G-RB9"/>
                     <navigationItem key="navigationItem" id="mJq-TH-Aw9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTc-XY-dRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-871.09375" y="724.8046875"/>
         </scene>
-        <!--Item-->
+        <!--ToDo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewControllers" id="BYZ-38-t0r" customClass="ViewControllers" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,7 +91,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gpS-WZ-3bt"/>
+                    <tabBarItem key="tabBarItem" title="ToDo" id="gpS-WZ-3bt"/>
                     <connections>
                         <outlet property="todolistTable" destination="Fco-pv-0ss" id="YVb-0H-I2W"/>
                     </connections>
@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="-997.65625" y="-86.1328125"/>
         </scene>
-        <!--Item-->
+        <!--Calender-->
         <scene sceneID="obS-R0-zvx">
             <objects>
                 <viewController storyboardIdentifier="Calendars" id="EOl-Gk-LN7" customClass="Calendars" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
@@ -250,7 +250,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.91452698733498083" blue="0.89267548062895086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cLU-Y3-SUo"/>
+                    <tabBarItem key="tabBarItem" title="Calender" id="cLU-Y3-SUo"/>
                     <connections>
                         <outlet property="calenderCollectionView" destination="cJd-1c-wUU" id="RWK-HQ-ioG"/>
                         <outlet property="headerTitle" destination="6TC-Qm-cLM" id="gBR-LW-KT4"/>
@@ -260,7 +260,7 @@
             </objects>
             <point key="canvasLocation" x="-64.84375" y="724.8046875"/>
         </scene>
-        <!--Item-->
+        <!--TimeTable-->
         <scene sceneID="R6k-f1-ImS">
             <objects>
                 <viewController storyboardIdentifier="TimeTable" id="TTI-wz-xcy" customClass="TimeTable" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
@@ -322,7 +322,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="W8c-IT-DjU"/>
+                    <tabBarItem key="tabBarItem" title="TimeTable" id="W8c-IT-DjU"/>
                     <connections>
                         <outlet property="timeTableView" destination="t4b-fl-Q49" id="6K1-d7-fPd"/>
                     </connections>

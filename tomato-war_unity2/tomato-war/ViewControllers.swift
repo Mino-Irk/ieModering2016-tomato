@@ -31,9 +31,9 @@ class ViewControllers: UIViewController, UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
         if (indexPath.row % 2 == 0) {
-            cell.contentView.backgroundColor = #colorLiteral(red: 1, green: 0.8413158059, blue: 0.8469641805, alpha: 0.301958476)
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.723267334, green: 0.9453228537, blue: 0.4824037952, alpha: 1)
         } else {
-            cell.contentView.backgroundColor = #colorLiteral(red: 0.8873918653, green: 0.8387421966, blue: 0.8471953869, alpha: 0.3017176798)
+            cell.contentView.backgroundColor = #colorLiteral(red: 1, green: 0.4746807218, blue: 0.4760116339, alpha: 1)
         }
     }
 
