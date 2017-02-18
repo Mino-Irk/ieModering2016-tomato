@@ -10,30 +10,37 @@ import Foundation
 import UIKit
 
 class ViewController: UIViewController{
+    
+    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 画面の横幅を取得
+        let screenWidth:CGFloat = view.frame.size.width
+        let screenHeight:CGFloat = view.frame.size.height
+        
+        // 画像の中心を画面の中心に設定
+        imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
+        
+        // UIImageViewのインスタンスをビューに追加
+        view.addSubview(imageView)
+    }
 
     // 画面表示するタイミングでリロードが入る
     override func viewWillAppear(_ animated: Bool) {
-        if( point == 10){
-            print(point)
+
+        switch point {
+        case 0:
+            imageView.image = UIImage(named: "flower.png")
+        case 10:
+            imageView.image = UIImage(named: "rabbit.png")
+        case 76...99:
+            print("76〜99")
+        case 100:
+            print("100")
+        default:
+            print("その他")
         }
     }
-    // 画面が起動するときに動く関数
-    // segueは毎回画面を作成する
-    // pageViewControllerは作成しないためここが動かない
-    
-//    override func loadView() {
-//        if (point == 10){
-//            print(point)
-//        }
-//    }
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        print(point)
-        // pointはViewContorollers.swiftで宣言したグローバル変数,育成ポイントである
-        // ポイントが10になったコンソール(右斜め下の枠)に出力する
-//        print(point)
-//        if (point == 10){
-//            print(point)
-//        }
-//    }
 }
