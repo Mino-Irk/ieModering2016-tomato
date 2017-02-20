@@ -29,15 +29,16 @@ class ViewController: UIViewController{
 
     // 画面表示するタイミングでリロードが入る
     override func viewWillAppear(_ animated: Bool) {
-
+        print(point)
         switch point {
-        case 0:
-            imageView.image = UIImage(named: "flower.png")
-        case 10:
-            imageView.image = UIImage(named: "rabbit.png")
-        case 76...99:
+        case 0...20:
+            imageView.image = UIImage(named: "tomato_bird.png")
+        case 30...70:
+            imageView.image = UIImage(named: "tomato_rabbit.png")
+        case 71...99:
             print("76〜99")
-        case 100:
+            imageView.image = UIImage(named: "tomato_fairy.png")
+        case 100...200:
             print("100")
         default:
             print("その他")
