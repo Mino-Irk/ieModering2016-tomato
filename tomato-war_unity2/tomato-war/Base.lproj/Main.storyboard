@@ -327,10 +327,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="spG-JV-rSf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="N0G-X7-An1">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="N0G-X7-An1">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.84240728620000005" blue="0.8450478911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="Sc0-zY-KZy" kind="relationship" relationship="viewControllers" id="bFm-Wq-sdL"/>
