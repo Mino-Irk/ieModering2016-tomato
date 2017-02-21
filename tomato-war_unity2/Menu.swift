@@ -15,17 +15,17 @@ class Menu: UIViewController{
     var pageViewController: UIPageViewController?
     
     // ページングして表示させる ViewControllerを保持する
-    var vcArray = [ViewControllers]() //todo画面
+    var vcArray = [TodoList]() //todo画面
     var vrArray = [Calendars]()       //カレンダー
     var vaArray = [TimeTable]()       //時間割
-    var vtArray = [ViewController]()  //育成画面
+    var vtArray = [cultivation]()  //育成画面
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Storyboard 上に配置した ViewController(StoryboardID = DataViewController) をインスタンス化して配列に追加する
        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ViewControllers") as! ViewControllers
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TodoList") as!TodoList
         vcArray.append(vc)
         
         
@@ -35,7 +35,7 @@ class Menu: UIViewController{
         let va = storyboard?.instantiateViewController(withIdentifier: "TimeTable") as!TimeTable
         vaArray.append(va)
         
-        let vt = storyboard?.instantiateViewController(withIdentifier: "ViewController") as!ViewController
+        let vt = storyboard?.instantiateViewController(withIdentifier: "cultivation") as!cultivation
         vtArray.append(vt)
         
         // ContainerView に Embed した UIPageViewController を取得する
