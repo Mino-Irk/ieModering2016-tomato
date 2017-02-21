@@ -84,7 +84,7 @@
 		7ECC727F1E39F32A0088017C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../illustration/check.png; sourceTree = "<group>"; };
 		7ECC72811E3A06290088017C /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white.jpg; path = ../../illustration/white.jpg; sourceTree = "<group>"; };
 		7ECC72831E3A1D920088017C /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower.png; path = ../../illustration/flower.png; sourceTree = "<group>"; };
-		7EE300C01E40BD8F00EFCF40 /* cultivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cultivation.swift; path = ../cultivation.swift; sourceTree = "<group>"; };
+		7EE300C01E40BD8F00EFCF40 /* cultivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cultivation.swift; sourceTree = "<group>"; };
 		7EE300C21E40BE1B00EFCF40 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		7EE300C61E40CA2E00EFCF40 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = ../Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
