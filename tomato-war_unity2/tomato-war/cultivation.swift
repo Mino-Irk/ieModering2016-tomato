@@ -11,14 +11,29 @@ import UIKit
 
 class ViewController: UIViewController{
     
-    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
     
+    let label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 画面の横幅を取得
         let screenWidth:CGFloat = view.frame.size.width
         let screenHeight:CGFloat = view.frame.size.height
+        
+        label.textAlignment = .center
+        label.text = getNowClockString() + "\n" + getNowClockString2()
+        label.numberOfLines = 0
+        label.font = UIFont(name: "AcademyEngravedLetPlain", size: 80)
+        label.sizeToFit()
+        label.center = CGPoint(x: 400, y: 390)
+        self.view.addSubview(label)
+        
+        
+        var timer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+
+        
+        
         
         // 画像の中心を画面の中心に設定
         imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
@@ -44,4 +59,35 @@ class ViewController: UIViewController{
             print("その他")
         }
     }
+    
+    func update() {                     //時計
+        
+        label.textAlignment = .center
+        label.text = getNowClockString() + "\n" + getNowClockString2()
+        label.numberOfLines = 0
+        label.font = UIFont(name: "AcademyEngravedLetPlain", size: 80)
+        label.sizeToFit()
+        label.center = CGPoint(x: 400, y: 390)
+        self.view.addSubview(label)
+        
+    }
+    
+    
+    func getNowClockString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let now = Date()
+        return formatter.string(from: now)
+    }
+    
+    
+    
+    
+    func getNowClockString2() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss"
+        let now = Date()
+        return formatter.string(from: now)
+    }
+
 }
