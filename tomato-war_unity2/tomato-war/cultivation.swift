@@ -20,13 +20,19 @@ class ViewController: UIViewController{
         // 画面の横幅を取得
         let screenWidth:CGFloat = view.frame.size.width
         let screenHeight:CGFloat = view.frame.size.height
+        let size:CGSize  = UIScreen.main.bounds.size
         
         label.textAlignment = .center
         label.text = getNowClockString() + "\n" + getNowClockString2()
         label.numberOfLines = 0
         label.font = UIFont(name: "AcademyEngravedLetPlain", size: 80)
         label.sizeToFit()
-        label.center = CGPoint(x: 400, y: 390)
+        if size.width < size.height {
+            label.center = CGPoint(x: 400, y: 390)
+        }else if size.width > size.height{
+            label.center = CGPoint(x: 0, y: 0)
+        }
+
         self.view.addSubview(label)
         
         
@@ -36,14 +42,37 @@ class ViewController: UIViewController{
         
         
         // 画像の中心を画面の中心に設定
-        imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
         
+        if size.width < size.height {
+            imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
+        }else if size.width > size.height {
+            imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight/3 - 50))
+        }
+
         // UIImageViewのインスタンスをビューに追加
         view.addSubview(imageView)
     }
 
     // 画面表示するタイミングでリロードが入る
-    override func viewWillAppear(_ animated: Bool) {
+    //override func viewWillAppear(_ animated: Bool) {
+    //}
+    
+    
+    func update() {                     //時計
+        // 画面の横幅を取得
+        let screenWidth:CGFloat = view.frame.size.width
+        let screenHeight:CGFloat = view.frame.size.height
+        let size:CGSize  = UIScreen.main.bounds.size
+        
+        if size.width < size.height {
+            print ("Yes")
+            imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
+        }else if size.width > size.height {
+            print ("No")
+            imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/3))
+        }
+        
+        
         print(point)
         switch point {
         case 0...20:
@@ -58,16 +87,19 @@ class ViewController: UIViewController{
         default:
             print("その他")
         }
-    }
-    
-    func update() {                     //時計
+
+        
         
         label.textAlignment = .center
         label.text = getNowClockString() + "\n" + getNowClockString2()
         label.numberOfLines = 0
         label.font = UIFont(name: "AcademyEngravedLetPlain", size: 80)
         label.sizeToFit()
-        label.center = CGPoint(x: 400, y: 390)
+        if size.width < size.height {
+            label.center = CGPoint(x: 400, y: 390)
+        }else if size.width > size.height{
+            label.center = CGPoint(x: screenWidth/2, y: screenHeight/4)
+        }
         self.view.addSubview(label)
         
     }
