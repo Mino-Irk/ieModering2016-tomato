@@ -89,21 +89,23 @@ class cultivation: UIViewController{
             imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/3))
         }
         
-        
         print(point)
         switch point {
         case 0...20:
-            imageView.image = UIImage(named: "tomato_bird.png")
+            imageView.image = UIImage(named: "buaisouna_tomato.png")
         case 30...70:
-            imageView.image = UIImage(named: "tomato_rabbit.png")
+            imageView.image = UIImage(named: "tomato_defalt.png")
         case 71...99:
             print("76〜99")
-            imageView.image = UIImage(named: "tomato_fairy.png")
-        case 100...200:
+            imageView.image = UIImage(named: "tomato_bird.png")
+        case 100...150:
             print("100")
+            imageView.image = UIImage(named: "tomato_rabbit.png")
         default:
             print("その他")
+            imageView.image = UIImage(named: "tomato_fairy.png")
         }
+
 
         print ("Yes")
         userDefaults.set(point, forKey:"labelPoint")
