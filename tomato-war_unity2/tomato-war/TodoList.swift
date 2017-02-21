@@ -10,7 +10,7 @@ import UIKit
 
 var point = 0 // 育成ポイント
 
-class ViewControllers: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TodoList: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var todolistTable: UITableView!
 

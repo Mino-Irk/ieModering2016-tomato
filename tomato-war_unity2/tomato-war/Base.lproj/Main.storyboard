@@ -12,7 +12,7 @@
         <!--home-->
         <scene sceneID="M4g-Pv-aVm">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="Sc0-zY-KZy" customClass="ViewController" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="Sc0-zY-KZy" customClass="cultivation" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bB0-Mf-rYU"/>
                         <viewControllerLayoutGuide type="bottom" id="8OY-5J-5R7"/>
@@ -25,6 +25,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmC-Jy-qoa">
+                                <rect key="frame" x="656" y="726" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="リセット">
+                                    <color key="titleColor" red="0.4247212112" green="0.015990253539999999" blue="0.0014153554799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="Sc0-zY-KZy" eventType="touchUpInside" id="q3p-lZ-rSW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -38,7 +48,7 @@
         <!--ToDo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewControllers" id="BYZ-38-t0r" customClass="ViewControllers" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllers" id="BYZ-38-t0r" customClass="TodoList" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

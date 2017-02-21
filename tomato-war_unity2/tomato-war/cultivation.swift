@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController{
+class cultivation: UIViewController{
     
     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
     
@@ -17,6 +17,9 @@ class ViewController: UIViewController{
     let userDefaults = UserDefaults.standard
     
 
+    @IBAction func resetButton(_ sender: Any) {
+        point = 0
+    }
     
     
     
@@ -53,7 +56,7 @@ class ViewController: UIViewController{
         self.view.addSubview(label)
         
         
-        var timer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+        var timer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(cultivation.update), userInfo: nil, repeats: true)
         
         
         
