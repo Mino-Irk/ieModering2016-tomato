@@ -14,13 +14,30 @@ class ViewController: UIViewController{
     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
     
     let label = UILabel()
+    let userDefaults = UserDefaults.standard
+    
+
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let labelPoint = userDefaults.string(forKey: "labelPoint") {
+            let points = Int(labelPoint)!
+            point = points
+        }
+        
+        
+        
         
         // 画面の横幅を取得
         let screenWidth:CGFloat = view.frame.size.width
         let screenHeight:CGFloat = view.frame.size.height
         let size:CGSize  = UIScreen.main.bounds.size
+        
         
         label.textAlignment = .center
         label.text = getNowClockString() + "\n" + getNowClockString2()
@@ -37,7 +54,7 @@ class ViewController: UIViewController{
         
         
         var timer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
-
+        
         
         
         
@@ -48,7 +65,6 @@ class ViewController: UIViewController{
         }else if size.width > size.height {
             imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight/3 - 50))
         }
-
         // UIImageViewのインスタンスをビューに追加
         view.addSubview(imageView)
     }
@@ -65,10 +81,8 @@ class ViewController: UIViewController{
         let size:CGSize  = UIScreen.main.bounds.size
         
         if size.width < size.height {
-            print ("Yes")
             imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/4))
         }else if size.width > size.height {
-            print ("No")
             imageView.center = CGPoint(x:screenWidth/2, y:(screenHeight - screenHeight/3))
         }
         
@@ -88,6 +102,8 @@ class ViewController: UIViewController{
             print("その他")
         }
 
+        print ("Yes")
+        userDefaults.set(point, forKey:"labelPoint")
         
         
         label.textAlignment = .center
