@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -99,75 +98,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1460.15625" y="724.8046875"/>
-        </scene>
-        <!--Menu-->
-        <scene sceneID="rmf-qd-Dew">
-            <objects>
-                <viewController storyboardIdentifier="Menu" id="RE9-Vj-XHN" customClass="Menu" customModule="tomato_war" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4fC-F7-Ll5"/>
-                        <viewControllerLayoutGuide type="bottom" id="7cT-b5-Nog"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WG2-Bd-FSC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-XF-7FF">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1032"/>
-                            </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hQs-an-eQ6">
-                                <rect key="frame" x="0.0" y="934" width="768" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djk-hk-PYm">
-                                        <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
-                                        <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
-                                        <state key="normal" title="Home"/>
-                                        <connections>
-                                            <action selector="ToCultivation:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="d8f-6z-ivg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fv-Qe-hIf">
-                                        <rect key="frame" x="192" y="0.0" width="192" height="50"/>
-                                        <state key="normal" title="ToDo"/>
-                                        <connections>
-                                            <action selector="ToTodo:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="oSa-df-WTp"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sty-FM-E4Q">
-                                        <rect key="frame" x="384" y="0.0" width="192" height="50"/>
-                                        <state key="normal" title="Calendar"/>
-                                        <connections>
-                                            <action selector="ToCalendar:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="Mxm-NR-PrH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yso-0X-XJg">
-                                        <rect key="frame" x="576" y="0.0" width="192" height="50"/>
-                                        <state key="normal" title="TimeTable"/>
-                                        <connections>
-                                            <action selector="ToTimetable:" destination="RE9-Vj-XHN" eventType="touchUpInside" id="bpq-MB-fQB"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="1VP-P1-nEb"/>
-                                    <constraint firstAttribute="width" constant="768" id="XVz-nv-nYN"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hQs-an-eQ6" secondAttribute="trailing" constant="-20" id="2hM-dK-FCG"/>
-                            <constraint firstAttribute="trailing" secondItem="pMI-XF-7FF" secondAttribute="trailing" id="69G-MO-sOu"/>
-                            <constraint firstItem="pMI-XF-7FF" firstAttribute="bottom" secondItem="7cT-b5-Nog" secondAttribute="top" id="6F8-bo-Mjb"/>
-                            <constraint firstItem="pMI-XF-7FF" firstAttribute="top" secondItem="WG2-Bd-FSC" secondAttribute="top" id="JTu-MD-JKH"/>
-                            <constraint firstItem="pMI-XF-7FF" firstAttribute="leading" secondItem="WG2-Bd-FSC" secondAttribute="leading" id="Kgl-F4-9As"/>
-                            <constraint firstItem="7cT-b5-Nog" firstAttribute="top" secondItem="hQs-an-eQ6" secondAttribute="bottom" constant="40" id="nsR-3i-sL6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUm-5P-pEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-997.65625" y="-86.1328125"/>
         </scene>
         <!--Calender-->
         <scene sceneID="obS-R0-zvx">
