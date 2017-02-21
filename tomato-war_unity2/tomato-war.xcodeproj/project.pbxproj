@@ -24,6 +24,8 @@
 		7E02B4161E3AFE760024B26B /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E02B4151E3AFE760024B26B /* tomato.png */; };
 		7E02B4181E3AFED30024B26B /* tomato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E02B4171E3AFED30024B26B /* tomato.jpg */; };
 		7E02B41A1E3B179F0024B26B /* tomato2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E02B4191E3B179F0024B26B /* tomato2.png */; };
+		7E05BB821E5C830400F65287 /* buaisouna_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E05BB811E5C830400F65287 /* buaisouna_tomato.png */; };
+		7E05BB841E5C831200F65287 /* tomato_defalt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E05BB831E5C831200F65287 /* tomato_defalt.png */; };
 		7E36609D1E271F2600390F4F /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609C1E271F2600390F4F /* CalendarCell.swift */; };
 		7E36609F1E271F4F00390F4F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36609E1E271F4F00390F4F /* DateManager.swift */; };
 		7E3660A11E27205900390F4F /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3660A01E27205900390F4F /* Calendars.swift */; };
@@ -84,6 +86,8 @@
 		7E02B4151E3AFE760024B26B /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tomato.png; path = ../../illustration/tomato.png; sourceTree = "<group>"; };
 		7E02B4171E3AFED30024B26B /* tomato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tomato.jpg; path = ../../illustration/tomato.jpg; sourceTree = "<group>"; };
 		7E02B4191E3B179F0024B26B /* tomato2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tomato2.png; path = ../../illustration/tomato2.png; sourceTree = "<group>"; };
+		7E05BB811E5C830400F65287 /* buaisouna_tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buaisouna_tomato.png; path = ../../illustration/buaisouna_tomato.png; sourceTree = "<group>"; };
+		7E05BB831E5C831200F65287 /* tomato_defalt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tomato_defalt.png; path = ../../illustration/tomato_defalt.png; sourceTree = "<group>"; };
 		7E36609C1E271F2600390F4F /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7E36609E1E271F4F00390F4F /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		7E3660A01E27205900390F4F /* Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendars.swift; sourceTree = "<group>"; };
@@ -169,7 +173,9 @@
 				31402FEF1E5C5F5E006F842B /* ca_tomato2.png */,
 				31402FF51E5C608C006F842B /* timetab2.png */,
 				31402FF91E5C6903006F842B /* home_icon.png */,
+				7E05BB811E5C830400F65287 /* buaisouna_tomato.png */,
 				31402FF21E5C600C006F842B /* timetable_ill2.png */,
+				7E05BB831E5C831200F65287 /* tomato_defalt.png */,
 				7EF9D5611E5C3BE300535E76 /* top_screen.png */,
 				7EF9D55B1E5C3BDC00535E76 /* tomato_bird.png */,
 				7EF9D55C1E5C3BDC00535E76 /* tomato_fairy.png */,
@@ -319,6 +325,7 @@
 				31402FF41E5C600C006F842B /* timetable_ill2.png in Resources */,
 				7ECC72821E3A06290088017C /* white.jpg in Resources */,
 				7ECC727E1E39F3230088017C /* border.png in Resources */,
+				7E05BB821E5C830400F65287 /* buaisouna_tomato.png in Resources */,
 				7ECC72841E3A1D920088017C /* flower.png in Resources */,
 				7E3EA5911E42CE8800070B6B /* rabbit.png in Resources */,
 				31402FF01E5C5F5E006F842B /* ca_tomato2.png in Resources */,
@@ -336,6 +343,7 @@
 				31402FFA1E5C6903006F842B /* home_icon.png in Resources */,
 				7ECC727C1E39EF3F0088017C /* calendar.png in Resources */,
 				728D27F11DFD4704009C6A0E /* Main.storyboard in Resources */,
+				7E05BB841E5C831200F65287 /* tomato_defalt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
