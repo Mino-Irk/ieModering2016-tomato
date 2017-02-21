@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31100F191E5C301C0028A09C /* time_tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 31100F181E5C301C0028A09C /* time_tomato.png */; };
+		31100F1B1E5C307A0028A09C /* time_tomato2.png in Resources */ = {isa = PBXBuildFile; fileRef = 31100F1A1E5C307A0028A09C /* time_tomato2.png */; };
 		31301D9E1E418A9300114A9B /* title-tomato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31301D9D1E418A9300114A9B /* title-tomato.jpg */; };
 		728D27EC1DFD4704009C6A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728D27EB1DFD4704009C6A0E /* AppDelegate.swift */; };
 		728D27F11DFD4704009C6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728D27EF1DFD4704009C6A0E /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31100F181E5C301C0028A09C /* time_tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time_tomato.png; sourceTree = "<group>"; };
+		31100F1A1E5C307A0028A09C /* time_tomato2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time_tomato2.png; sourceTree = "<group>"; };
 		31301D9D1E418A9300114A9B /* title-tomato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "title-tomato.jpg"; sourceTree = "<group>"; };
 		728D27E81DFD4704009C6A0E /* tomato-war.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tomato-war.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728D27EB1DFD4704009C6A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +155,9 @@
 				7ECC727B1E39EF3F0088017C /* calendar.png */,
 				31301D9D1E418A9300114A9B /* title-tomato.jpg */,
 				7E3EA5901E42CE8800070B6B /* rabbit.png */,
+				31100F1A1E5C307A0028A09C /* time_tomato2.png */,
 				7ECC72831E3A1D920088017C /* flower.png */,
+				31100F181E5C301C0028A09C /* time_tomato.png */,
 				7E3EA58E1E42CB3700070B6B /* tomato3.png */,
 				7E9A5D3A1E3F16E10099047A /* time.png */,
 				7E02B4191E3B179F0024B26B /* tomato2.png */,
@@ -297,6 +303,7 @@
 				7E3EA58F1E42CB3700070B6B /* tomato3.png in Resources */,
 				7ECC72821E3A06290088017C /* white.jpg in Resources */,
 				7ECC727E1E39F3230088017C /* border.png in Resources */,
+				31100F191E5C301C0028A09C /* time_tomato.png in Resources */,
 				7ECC72841E3A1D920088017C /* flower.png in Resources */,
 				7E3EA5911E42CE8800070B6B /* rabbit.png in Resources */,
 				7E02B41A1E3B179F0024B26B /* tomato2.png in Resources */,
@@ -305,6 +312,7 @@
 				7ECC72801E39F32A0088017C /* check.png in Resources */,
 				7E02B4161E3AFE760024B26B /* tomato.png in Resources */,
 				728D27F31DFD4704009C6A0E /* Assets.xcassets in Resources */,
+				31100F1B1E5C307A0028A09C /* time_tomato2.png in Resources */,
 				31301D9E1E418A9300114A9B /* title-tomato.jpg in Resources */,
 				7ECC727C1E39EF3F0088017C /* calendar.png in Resources */,
 				728D27F11DFD4704009C6A0E /* Main.storyboard in Resources */,
