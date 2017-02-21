@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="home" id="upf-8G-RB9"/>
+                    <tabBarItem key="tabBarItem" title="home" image="home_icon.png" id="upf-8G-RB9"/>
                     <navigationItem key="navigationItem" id="mJq-TH-Aw9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTc-XY-dRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -76,7 +76,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="center" tableViewCell="3PQ-Mc-EYq" id="Fa0-yI-yED">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,7 +91,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ToDo" id="gpS-WZ-3bt"/>
+                    <tabBarItem key="tabBarItem" title="ToDo" image="timetable_ill2.png" id="gpS-WZ-3bt"/>
                     <connections>
                         <outlet property="todolistTable" destination="Fco-pv-0ss" id="YVb-0H-I2W"/>
                     </connections>
@@ -250,7 +250,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.91452698733498083" blue="0.89267548062895086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calender" id="cLU-Y3-SUo"/>
+                    <tabBarItem key="tabBarItem" title="Calender" image="ca_tomato2.png" id="cLU-Y3-SUo"/>
                     <connections>
                         <outlet property="calenderCollectionView" destination="cJd-1c-wUU" id="RWK-HQ-ioG"/>
                         <outlet property="headerTitle" destination="6TC-Qm-cLM" id="gBR-LW-KT4"/>
@@ -282,7 +282,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t4b-fl-Q49">
                                 <rect key="frame" x="124" y="174" width="624" height="775"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80277884006500244" blue="0.81758016347885132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0G5-g0-xUe">
                                     <size key="itemSize" width="144" height="147"/>
@@ -293,14 +293,14 @@
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="timeTableCell" id="v1Q-1X-9bg" customClass="TimeTableCollectionView" customModule="tomato_war" customModuleProvider="target">
                                         <rect key="frame" x="3" y="0.0" width="144" height="147"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="144" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCN-1P-plE">
                                                     <rect key="frame" x="18" y="62" width="97" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -322,7 +322,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TimeTable" image="time_tomato2.png" id="W8c-IT-DjU"/>
+                    <tabBarItem key="tabBarItem" title="TimeTable" image="timetab2.png" id="W8c-IT-DjU"/>
                     <connections>
                         <outlet property="timeTableView" destination="t4b-fl-Q49" id="6K1-d7-fPd"/>
                     </connections>
@@ -416,11 +416,14 @@
     </scenes>
     <resources>
         <image name="border.png" width="1200" height="851"/>
+        <image name="ca_tomato2.png" width="80" height="48"/>
         <image name="calendar.png" width="480" height="600"/>
         <image name="check.png" width="1024" height="1024"/>
+        <image name="home_icon.png" width="80" height="48"/>
         <image name="rabbit.png" width="2048" height="1000"/>
         <image name="time.png" width="1536" height="2048"/>
-        <image name="time_tomato2.png" width="69" height="48"/>
+        <image name="timetab2.png" width="70" height="49"/>
+        <image name="timetable_ill2.png" width="80" height="53"/>
         <image name="title-tomato.jpg" width="1536" height="2048"/>
         <image name="tomato2.png" width="675" height="900"/>
         <image name="tomato3.png" width="675" height="900"/>
