@@ -14,6 +14,8 @@ class cultivation: UIViewController{
     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
     
     let label = UILabel()
+    let label2 = UILabel()
+
     let userDefaults = UserDefaults.standard
     
 
@@ -54,6 +56,23 @@ class cultivation: UIViewController{
         }
 
         self.view.addSubview(label)
+        
+        
+        label2.textAlignment = .center
+        let point2 = String(point)
+        label2.text = point2
+        label2.numberOfLines = 0
+        label2.font = UIFont(name: "AcademyEngravedLetPlain", size: 30)
+        label2.sizeToFit()
+        if size.width < size.height {
+            label2.center = CGPoint(x: 80, y: 780)
+        }else if size.width > size.height{
+            label2.center = CGPoint(x: 80, y: 780)
+        }
+        
+        self.view.addSubview(label2)
+        
+        
         
         
         var timer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(cultivation.update), userInfo: nil, repeats: true)
@@ -122,6 +141,27 @@ class cultivation: UIViewController{
             label.center = CGPoint(x: screenWidth/2, y: screenHeight/4)
         }
         self.view.addSubview(label)
+        
+        
+        
+        label2.textAlignment = .center
+        let point2 = String(point)
+        label2.text = point2
+        label2.numberOfLines = 0
+        label2.font = UIFont(name: "AcademyEngravedLetPlain", size: 30)
+        label2.sizeToFit()
+        if size.width < size.height {
+            label2.center = CGPoint(x: 80, y: 780)
+        }else if size.width > size.height{
+            label2.center = CGPoint(x: 110, y: 590)
+        }
+        
+        self.view.addSubview(label2)
+
+        
+        
+        
+        
         
     }
     
